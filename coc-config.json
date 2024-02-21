@@ -1,0 +1,36 @@
+{
+  "suggest.noselect": false,
+  "suggest.enablePreview": true,
+  "suggest.removeDuplicateItems": true,
+  "coc.preferences.formatOnSaveFiletypes": [*],
+  "coc-actions.hideCursor": false,
+  "coc-actions.useCursorLine": true,
+  "diagnostic.checkCurrentLine": false,
+  "python.jediEnabled": false,
+  "python.pythonPath": "/usr/local/python3/bin/python3",
+  "python.linting.enabled": true,
+  "python.linting.lintOnSave": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintPath": "~/dd/dogweb/venv3/bin/pylint",
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "~/dd/dogweb/venv3/bin/flake8",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "~/dd/dogweb/venv3/bin/black",
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"],
+      "initializationOptions": {
+        "usePlaceholders": true
+      }
+    },
+    "terraform": {
+      "command": "terraform-ls",
+      "args": ["serve"],
+      "filetypes": ["terraform", "tf"],
+      "initializationOptions": {},
+      "settings": {}
+    }
+  }
+}
